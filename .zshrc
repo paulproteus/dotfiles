@@ -51,7 +51,15 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# Add default stuff to PATH
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
+
+# Add personal stuff to PATH, first
+export PATH="$HOME/projects/svn-bin:$HOME/projects/git-bin:$PATH"
+
+# Add sbin, because life is too hard without sbin
+export PATH="$PATH:/usr/sbin:/sbin"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
